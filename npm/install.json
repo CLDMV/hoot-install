@@ -1,0 +1,35 @@
+{
+	"name": "hoot",
+	"title": "Hoot",
+	"image": "ghcr.io/cldmv/hoot",
+	"port": 4668,
+	"volume": "hoot-data",
+	"hostMount": "/host",
+	"stopGracePeriod": "60s",
+	"gpu": true,
+	"env": {
+		"HOOT_SETUP_TOKEN": "",
+		"HOOT_REGISTRY_TOKEN": "",
+		"HOOT_HF_TOKEN": "",
+		"HOOT_LLM_API_KEY": ""
+	},
+	"registry": {
+		"private": true,
+		"scope": "read:packages"
+	},
+	"home": {
+		"posix": ".hoot",
+		"windows": "Hoot"
+	},
+	"envPrefix": "HOOT",
+	"arch": [
+		"amd64"
+	],
+	"minDiskMb": 8192,
+	"setupPath": "/",
+	"kit": {
+		"url": "https://cldmv.github.io/hoot-install",
+		"package": "@cldmv/hoot-install"
+	},
+	"releaseKeys": []
+}

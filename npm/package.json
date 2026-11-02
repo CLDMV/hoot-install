@@ -1,0 +1,21 @@
+{
+	"name": "@cldmv/hoot-install",
+	"version": "0.1.0",
+	"description": "Install Hoot: one command from nothing to a running Hoot container.",
+	"type": "module",
+	"license": "Apache-2.0",
+	"bin": {
+		"hoot-install": "bin/install.mjs"
+	},
+	"files": [
+		"bin/",
+		"lib/",
+		"install.json"
+	],
+	"engines": {
+		"node": ">=20"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
